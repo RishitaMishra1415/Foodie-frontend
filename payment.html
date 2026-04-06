@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Payment</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+
+<header>
+<div class="logo"><img src="./images/logo (3).png" alt="Apna Taste Logo"></div>
+</header>
+<div class="payment-container">
+<h2>Order Summary</h2>
+<div id="orderDetails"></div>
+<div class="payment-method">
+<h3>Select Payment Method</h3>
+<label>
+<input type="radio" name="payment" value="online" checked>
+Online Payment
+</label>
+<label>
+<input type="radio" name="payment" value="cod">
+Cash on Delivery (+₹15)
+</label>
+</div>
+<h3 id="finalAmount"></h3>
+<button onclick="placeOrder()">Place Order</button>
+</div>
+<footer>
+<p>© 2026 Apna Taste</p>
+</footer>
+<script src="js/payment.js"></script>
+</body>
+</html>

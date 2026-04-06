@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - Foodie</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>Foodie Admin Panel</h2>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+    <h3>Add / Update Food</h3>
+
+    <div class="form-box">
+        <input type="text" id="foodName" placeholder="Food Name">
+        <input type="text" id="foodCategory" placeholder="Category (Pizza/Cake/etc)">
+        <input type="number" id="foodPrice" placeholder="Price">
+        <input type="text" id="foodImage" placeholder="Image Path (images/pizza.jpg)">
+        <textarea id="foodDesc" placeholder="Description"></textarea>
+
+        <button onclick="saveFood()">Save Food</button>
+    </div>
+
+    <h3>All Foods</h3>
+
+    <div id="foodTable"></div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

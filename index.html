@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apna Taste - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo"><img src="./images/logo (3).png" alt="Apna Taste Logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li> 
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">My Meal</a></li>
+            <li><a href="myorders.html">My Order</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+        <button id="logoutBtn" class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Are You Hungry?</h1>
+        <h2>Don't Wait!!!</h2>
+        <p>Let's Start To Order Food Now</p>
+        <a href="menu.html" class="btn">Checkout Menu</a>
+    </div>
+</section>
+
+
+<section class="auth-section">
+    <h2>Join Us Today</h2>
+    <div class="auth-buttons">
+        <a href="signup.html" class="btn secondary">Sign Up</a>
+        <a href="login.html" class="btn secondary">Login</a>
+        <a href="admin-login.html" class="btn secondary">Admin Login</a>
+    </div>
+</section>
+
+
+<section class="categories">
+    <h2>What's On Your Mind?</h2>
+    <div class="category-grid">
+
+        <a href="categories/cake.html" class="category-card">
+            <img src="images/cake.jpg" alt="Cakes">
+            <h3>Cakes</h3>
+        </a>
+
+        <a href="categories/juice.html" class="category-card">
+            <img src="images/juice.jpg" alt="Juice">
+            <h3>Juice</h3>
+        </a>
+
+        <a href="categories/shake.html" class="category-card">
+            <img src="images/shake.jpg" alt="Shake">
+            <h3>Shake</h3>
+        </a>
+
+        <a href="categories/pizza.html" class="category-card">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+        </a>
+
+        <a href="categories/veg.html" class="category-card">
+            <img src="images/veg.jpg" alt="Veg">
+            <h3>Veg</h3>
+        </a>
+
+        <a href="categories/nonveg.html" class="category-card">
+            <img src="images/non-veg.jpg" alt="Non-Veg">
+            <h3>Non-Veg</h3>
+        </a>
+
+        <a href="categories/breakfast.html" class="category-card">
+            <img src="images/breakfast.jpg" alt="Breakfast">
+            <h3>Breakfast</h3>
+        </a>
+
+        <a href="categories/lunch.html" class="category-card">
+            <img src="images/lunch.jpg" alt="Lunch">
+            <h3>Lunch</h3>
+        </a>
+
+        <a href="categories/dinner.html" class="category-card">
+            <img src="images/dinner.jpg" alt="Dinner">
+            <h3>Dinner</h3>
+        </a>
+
+    </div>
+</section>
+<script>
+
+const user = sessionStorage.getItem("user");
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+
+
+function logout(){
+
+sessionStorage.removeItem("user");
+
+alert("Logged out successfully");
+
+window.location.href="index.html";
+
+}
+
+</script>
+
+
+<footer>
+    <div class="footer-content">
+        <h3>Apna Taste</h3>
+        <p>Delicious food delivered at your doorstep.</p>
+        <p>Email: RishitaOwnersupport@ApnaTaste.com</p>
+        <p>© 2026 Apna Taste. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

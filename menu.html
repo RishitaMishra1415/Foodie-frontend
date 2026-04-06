@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Apna Taste</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo"><img src="./images/logo (3).png" alt="Apna Taste Logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">My Meal</a></li>
+            <li><a href="myorders.html">My Order</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button id="logoutBtn" class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<!-- MENU SECTION -->
+<section class="menu-container">
+    <h1>Our Categories</h1>
+    <div class="menu-grid">
+        <div class="menu-card">
+            <img src="images/cake.jpg">
+            <h3>Cake</h3>
+            <a href="categories/cake.html" class="order-btn">Order Now</a>
+        </div>
+        <div class="menu-card">
+            <img src="images/pizza.jpg">
+            <h3>Pizza</h3>
+            <a href="categories/pizza.html" class="order-btn">Order Now</a>
+        </div>
+        <div class="menu-card">
+            <img src="images/shake.jpg">
+            <h3>Shake</h3>
+            <a href="categories/shake.html" class="order-btn">Order Now</a>
+        </div>
+        <div class="menu-card">
+            <img src="images/juice.jpg">
+            <h3>Juice</h3>
+            <a href="categories/juice.html" class="order-btn">Order Now</a>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/veg.jpg">
+            <h3>Veg</h3>
+            <a href="categories/veg.html" class="order-btn">Order Now</a>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/non-veg.jpg">
+            <h3>Non-Veg</h3>
+            <a href="categories/nonveg.html" class="order-btn">Order Now</a>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/breakfast.jpg">
+            <h3>Breakfast</h3>
+            <a href="categories/breakfast.html" class="order-btn">Order Now</a>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/lunch.jpg">
+            <h3>Lunch</h3>
+            <a href="categories/lunch.html" class="order-btn">Order Now</a>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/dinner.jpg">
+            <h3>Dinner</h3>
+            <a href="categories/dinner.html" class="order-btn">Order Now</a>
+        </div>
+
+    </div>
+</section>
+<script>
+
+    const user = sessionStorage.getItem("user");
+    
+    const logoutBtn = document.getElementById("logoutBtn");
+    
+     
+    function logout(){
+    
+    sessionStorage.removeItem("user");
+    
+    alert("Logged out successfully");
+    
+    window.location.href="index.html";
+    
+    }
+    
+    </script>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <h3>Apna Taste</h3>
+        <p>Delicious food delivered at your doorstep.</p>
+        <p>© 2026 Apna Taste. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

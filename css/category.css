@@ -1,0 +1,171 @@
+body{
+
+    margin:0;
+    font-family:Arial;
+    background:#f5f5f5;
+    
+    }
+    
+    .header{
+    
+    background:#121212;
+    color:#D4AF37;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    }
+    
+    .header nav a{
+    
+    color:#D4AF37;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+    
+    }
+    .logo{
+        padding-left:40px;
+    }
+    .logo img{
+        height:80px; 
+        width:auto;
+       border-radius:50%;
+        object-fit: contain;
+      
+      }
+    
+    .category-section{
+    
+    padding:40px;
+    text-align:center;
+    
+    }
+    
+    .food-container{
+    
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    
+    }
+    
+    .food-card{
+    
+    width:260px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #D4AF37;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    
+    }
+    
+    .food-img{
+    
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    
+    }
+    
+    .food-card select,
+    .food-card input{
+    
+    width:100%;
+    padding:6px;
+    margin-top:5px;
+    
+    }
+    
+    .food-card button{
+    
+    margin-top:10px;
+    padding:8px;
+    width:100%;
+    background:#121212;
+    color:#D4AF37;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    
+    }
+    .logout-btn{
+
+        background:#D4AF37;
+        color:#121212;
+        
+        border:none;
+        
+        padding:8px 14px;
+        
+        border-radius:6px;
+        
+        font-size:14px;
+        
+        cursor:pointer;
+        
+        margin-left:15px;
+        
+        font-weight:600;
+        
+        }
+        
+        .logout-btn:hover{
+        
+        background:#F5D76E;
+        color:#121212;
+        
+        }
+
+    .footer{
+    
+    background:#121212;
+    color:#D4AF37;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+    
+    }
+    
+    
+    /* Tablet */
+    
+    @media (max-width:900px){
+    
+    .food-card{
+    
+    width:45%;
+    
+    }
+    
+    }
+    
+    
+    /* Mobile */
+    
+    @media (max-width:600px){
+    
+    .header{
+    
+    flex-direction:column;
+    text-align:center;
+    
+    }
+    
+    .header nav{
+    
+    margin-top:10px;
+    
+    }
+    
+    .food-card{
+    
+    width:90%;
+    
+    }
+    
+    }
