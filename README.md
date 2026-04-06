@@ -51,7 +51,7 @@ It simulates a real-world food ordering system.
 ---
 ##  How to Run the Project
 1. Clone the repository  
-git clone https://github.com/RishitaMishra1415/foodie-frontend.git  
+git clone https://github.com/RishitaMishra1415/Foodie-frontend.git  
 2. Open project folder  
 3. Go to server folder  
 cd server  
